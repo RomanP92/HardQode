@@ -1,3 +1,8 @@
+"""
+Модель Access создана для предоставления доступа к продукту.
+
+"""
+
 from django.db import models
 from django.contrib.auth.models import User
 
