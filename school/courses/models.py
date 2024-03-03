@@ -24,7 +24,7 @@ class Product(SchoolAbstract):
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name="Цена")
     min_users = models.IntegerField(verbose_name="Минимум пользователей в группе")
     max_users = models.IntegerField(verbose_name="Максимум пользователей в группе")
-    creator = models.ForeignKey("Creator", on_delete=models.PROTECT, related_name='products')
+    creator = models.ForeignKey("Creator", on_delete=models.PROTECT, related_name='products', verbose_name="Автор")
 
     class Meta:
         verbose_name_plural = 'Продукты'
